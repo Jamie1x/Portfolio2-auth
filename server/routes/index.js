@@ -36,28 +36,36 @@ router.get('/', (req, res, next) => {
 /* GET about page. */
 router.get('/about', (req, res, next) => {
   res.render('content/about', {
-    title: 'About'
+    title: 'About',
+    connections: '',
+    displayName: req.user ? req.user.displayName : ''
    });
 });
 
 /* GET projects page. */
 router.get('/projects', (req, res, next) => {
   res.render('content/projects', {
-    title: 'Projects'
+    title: 'Projects',
+    connections: '',
+    displayName: req.user ? req.user.displayName : ''
    });
 });
 
 /* GET services page. */
 router.get('/services', (req, res, next) => {
   res.render('content/services', {
-    title: 'Services'
+    title: 'Services',
+    connections: '',
+    displayName: req.user ? req.user.displayName : ''
    });
 });
 
 /* GET contact page. */
 router.get('/contact', (req, res, next) => {
   res.render('content/contact', {
-    title: 'Contact'
+    title: 'Contact',
+    connections: '',
+    displayName: req.user ? req.user.displayName : ''
    });
 });
 
@@ -107,7 +115,6 @@ router.post('/register', (req, res, next)=>{
   User.register(
     new User({
       username: req.body.username,
-      //password: req.body.password,
       email: req.body.email,
       displayName: req.body.displayName
     }),

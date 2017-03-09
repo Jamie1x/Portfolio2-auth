@@ -1,6 +1,6 @@
 //users.js
 //Jamie Kennedy - 300753196
-//COMP308-W2017-Midterm-300753196
+//COMP308-W2017-Assignment2
 
 // require modules for our User Model
 let mongoose = require('mongoose');

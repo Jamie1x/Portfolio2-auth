@@ -1,4 +1,6 @@
-/* custom JS goes here */
+//app.js
+//Jamie Kennedy - 300753196
+//COMP308-W2017-Assignment2
 
 /* pagination code from http://www.bootply.com/lxa0FF9yhw */
 $.fn.pageMe = function(opts){
